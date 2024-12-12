@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+
+#main{
+    padding: 2vmax;
+}
+#main .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #33333314;
+    width: 80%;
+    height: 5vmax;
+    margin: auto;
+    border-radius:10px ;
+}
+.links{
+    padding: 1vmax;
+}
+#main .head .links a{
+    font-size: 1.3vmax;
+    text-decoration: none;
+    padding: 0.8vmax;
+    color: black;
+}
+#main .head h1{
+    font-size: 2.8vmax;
+    margin-left: -10vmax;
+}
+
+/* Center */
+.center{
+    text-align: center;
+}
+.center h2{
+    font-size: 6vmax;
+    letter-spacing: -2px;
+    margin: 8vmax 0 3vmax 0;
+}
+.center img{
+    height: 600px;
+}
+
+/* Making Image responsive */
+.center img{
+    height: 75vh;
+    width: 90vw;
+    object-fit: cover;
+}
+
+
+@media (max-width:700px) {
+    .links{
+        display: none;
+    }
+
+    #main .head h1{
+        margin-left: 22vw;
+    }
+
+}

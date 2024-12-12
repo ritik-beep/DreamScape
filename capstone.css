@@ -78,6 +78,7 @@ body,html{
 #page2 .project .projects{
     text-align: center;
     width: 20vmax;
+    margin: 2vmax 0;
 }
 #page2 .project .projects img{
     height: 35vh;
@@ -98,6 +99,70 @@ body,html{
     cursor: pointer;
 }
 
+/* Contact */
+#page3{
+    height: 90vh;
+}
+#page3 .contact{
+    margin-left: 15vmax;
+}
+#page3 .cForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10vmax 0;
+}
+#page3 .cForm .c{
+    text-align: center;
+}
+#page3 .cForm .c .input{
+    margin: 2vmax;
+}
+#page3 .cForm .c .input input[type="text"]{
+    width: 2vmax;
+    height: 2vmax;
+    text-align: center;
+    font-size: 1.3vmax;
+    padding: 0.5vmax;
+}
+#page3 .contact h2{
+    margin-bottom: 2vmax;
+}
+#page3 .cForm .c button{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 0.6vmax 1vmax;
+    cursor: pointer;
+    transition: 1s;
+    margin: 2vmax  0;
+    cursor: pointer;
+}
+#page3 .cForm .c button:hover{
+    background: #fff;
+    color: #000;
+}
+#page3 .cForm .c a{
+    text-decoration: none;
+    color: #000;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    padding: 0.5vmax;
+    border-radius: 7px;
+    transition: 0.7s;
+}
+footer a:hover{
+    background: #000;
+    color: #fff;
+}
 @media (max-width:700px) {
     .links{
         display: none;
@@ -106,5 +171,9 @@ body,html{
     #main #page1 .head h1{
         margin-left: 22vw;
     }
-
+    #page2 .project{
+        flex-direction: column;
+        /* align-items: flex-start; */
+        margin-left: -30vmax;
+    }
 }

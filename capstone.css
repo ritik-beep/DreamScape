@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
@@ -14,7 +16,7 @@ body,html{
 #main{
     padding: 2vmax;
 }
-#main .head{
+#main #page1 .head{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,13 +29,13 @@ body,html{
 .links{
     padding: 1vmax;
 }
-#main .head .links a{
+#main #page1 .head .links a{
     font-size: 1.3vmax;
     text-decoration: none;
     padding: 0.8vmax;
     color: black;
 }
-#main .head h1{
+#main #page1 .head h1{
     font-size: 2.8vmax;
     margin-left: -10vmax;
 }
@@ -59,12 +61,49 @@ body,html{
 }
 
 
+/* Page 2 */
+#page2{
+    margin: 5vmax 0;
+}
+#page2 h1{
+    margin: 2vmax 0;
+}
+#page2 .project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vmax;
+}
+
+#page2 .project .projects{
+    text-align: center;
+    width: 20vmax;
+}
+#page2 .project .projects img{
+    height: 35vh;
+}
+#page2 .project .projects h2{
+    font-size: 1.6vmax;
+    font-family: "Bebas Neue", sans-serif;
+}
+#page2 .project .projects p{
+    font-size: 1vmax;
+    letter-spacing: -1.5px;
+    margin: 1vmax 0;
+}
+#page2 .project .projects button{
+    padding: 0.5vmax 1vmax;
+    color: white;
+    background: #000;
+    cursor: pointer;
+}
+
 @media (max-width:700px) {
     .links{
         display: none;
     }
 
-    #main .head h1{
+    #main #page1 .head h1{
         margin-left: 22vw;
     }
 
